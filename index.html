@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="description"
+              content="Enhancing Split Computing and Early Exit Applications through Predefined Sparsity. Accepted @ FDL 2024.">
+        <meta name="keywords" content="Split Computing, Early Exit, Deep Neural Networks, Predefined Sparsity, Edge Devices">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Enhancing Split Computing and Early Exit Applications through Predefined Sparsity</title>
+
+        <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+              rel="stylesheet">
+
+        <link rel="stylesheet" href="./static/css/bulma.min.css">
+        <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+        <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+        <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+        <link rel="stylesheet"
+              href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+        <link rel="stylesheet" href="./static/css/index.css">
+        <link rel="icon" href="./static/images/intelligo.png">
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script defer src="./static/js/fontawesome.all.min.js"></script>
+        <script src="./static/js/bulma-carousel.min.js"></script>
+        <script src="./static/js/bulma-slider.min.js"></script>
+        <script src="./static/js/index.js"></script>
+        <script id="MathJax-script" async src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+        <script type="text/x-mathjax-config">
+          MathJax.Hub.Config({
+            tex2jax: { inlineMath: [['$', '$']] }
+          });
+        </script>
+    </head>
+
+    <body>
+        <nav class="navbar" role="navigation" aria-label="main navigation">
+            <div class="navbar-brand">
+                <a role="button" class="navbar-burger" aria-label="menu" aria-expanded="false">
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                    <span aria-hidden="true"></span>
+                </a>
+            </div>
+            <div class="navbar-menu">
+                <div class="navbar-start" style="flex-grow: 1; justify-content: center;">
+                    <a class="navbar-item" target="_blank" href="https://capogrosso.eu">
+                        <span class="icon">
+                            <i class="fas fa-home"></i>
+                        </span>
+                    </a>
+                    <div class="navbar-item has-dropdown is-hoverable">
+                        <a class="navbar-link">
+                          More Research
+                        </a>
+                        <div class="navbar-dropdown">
+                            <a class="navbar-item" target="_blank" href="https://vips4.github.io/I-Split/">
+                                I-SPLIT (ICPR 2022)
+                            </a>
+                            <a class="navbar-item" target="_blank" href="https://luigicapogrosso.github.io/split_et_impera/">
+                                Split-Et-Impera (DDECS 2023)
+                            </a>
+                            <a class="navbar-item" target="_blank" href="https://luigicapogrosso.github.io/MTL-Split/">
+                                MTL-Split (DAC 2024)
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Title, authors, institution, links. -->
+        <section class="hero">
+            <div class="hero-body">
+                <div class="container is-max-desktop">
+                    <div class="columns is-centered">
+                        <div class="column has-text-centered">
+                            <h1 class="title is-1 publication-title">Enhancing Split Computing and Early Exit Applications through Predefined Sparsity</h1>
+                            <div class="is-size-5 publication-authors">
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.capogrosso.eu">Luigi Capogrosso</a><sup>1</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=22371&lang=en">Enrico Fraccaroli</a><sup>1,2</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="">Giulio Petrozziello</a><sup>3</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=9250&lang=en">Francesco Setti</a>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://cs.unc.edu/person/samarjit-chakraborty/">Samarjit Chakraborty</a><sup>1,2</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=59&lang=en">Franco Fummi</a><sup>1</sup>,
+                                </span>
+                                <span class="author-block">
+                                    <a target="_blank" href="https://www.dimi.univr.it/?ent=persona&id=218&lang=en">Marco Cristani</a><sup>1</sup>
+                                </span>
+                            </div>
+
+                            <div class="is-size-5 publication-authors">
+                              <span class="author-block">
+                                  <sup>1</sup>
+                                  Department of Engineering for Innovation Medicine, University of Verona, Italy
+                              </span>
+                              <span class="author-block">
+                                  <sup>2</sup>
+                                  Department of Computer Science, The University of North Carolina at Chapel Hill, USA
+                              </span>
+                              <span class="author-block">
+                                <sup>3</sup>
+                                Department of Computer Science,  University of Verona, Italy
+                            </span>
+                            </div>
+
+                            <div class="column has-text-centered">
+                                <div class="publication-links">
+                                    <!-- Proceedings link. -->
+                                    <span class="link-block">
+                                        <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="fas fa-file-pdf"></i>
+                                            </span>
+                                            <span>Paper</span>
+                                        </a>
+                                    </span>
+                                    <!-- arXiv link. -->
+                                    <span class="link-block">
+                                        <a target="_blank" href="" class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="ai ai-arxiv"></i>
+                                            </span>
+                                            <span>arXiv</span>
+                                        </a>
+                                    </span>
+                                    <!-- Code link. -->
+                                    <span class="link-block">
+                                        <a target="_blank" href="https://github.com/intelligolabs/sparsity_sc_ee" class="external-link button is-normal is-rounded is-dark">
+                                            <span class="icon">
+                                                <i class="fab fa-github"></i>
+                                            </span>
+                                        <span>Code</span>
+                                        </a>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Teaser. -->
+        <section class="hero teaser">
+            <div class="container is-max-desktop">
+                <div class="hero-body has-text-centered">
+                    <img src="./static/images/teaser.png" alt="Teaser" type="image/png" style="width: 80%; height: 80%;">
+                    <h6 class="subtitle is-6 has-text-centered">
+                        Starting from a DNN ${\mathcal{M}(\cdot{})}$, we first apply the <i>predefined sparsity</i>, and then we train the network.
+                        After the training stage, we split the network following the SC and EE paradigm.
+                        As a result, the final architecture is not so computationally intensive, doesn't require huge storage spaces, and has less energy consumption, all without compromising the overall performance.
+                    </h6>
+                </div>
+            </div>
+        </section>
+
+        <!-- Abstract. -->
+        <section class="section">
+            <div class="container is-max-desktop">
+                <div class="columns is-centered has-text-centered">
+                    <div class="column is-four-fifths">
+                        <h2 class="title is-3">Abstract</h2>
+                        <div class="content has-text-justified">
+                            <p>
+                                In the past decade, Deep Neural Networks (DNNs) achieved state-of-the-art performance in a broad range of problems, spanning from object classification and action recognition to smart building and healthcare.
+                                The flexibility that makes DNNs such a pervasive technology comes at a price: the computational requirements preclude their deployment on most of the resource-constrained edge devices available today to solve real-time and real-world tasks.
+                                This paper introduces a novel approach to address this challenge by combining the concept of predefined sparsity with Split Computing (SC) and Early Exit (EE).
+                                In particular, SC aims at splitting a DNN with a part of it deployed on an edge device and the rest on a remote server.
+                                Instead, EE allows the system to stop using the remote server and rely solely on the edge device's computation if the answer is already good enough.
+                                Specifically, how to apply such a predefined sparsity to a SC and EE paradigm has never been studied.
+                                This paper studies this problem and shows how predefined sparsity significantly reduces the computational, storage, and energy burdens during the training and inference phases, regardless of the hardware platform.
+                                This makes it a valuable approach for enhancing the performance of SC and EE applications.
+                                Experimental results showcase reductions exceeding $4\times{}$ in storage and computational complexity without compromising performance.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Citation. -->
+        <section class="section" id="BibTeX">
+            <div class="container is-max-desktop content">
+                <h2 class="title">BibTeX</h2>
+<pre><code>TBA.
+</code></pre>
+            </div>
+        </section>
+
+        <footer class="footer">
+            <div class="container">
+                <div class="content has-text-centered">
+                    <a class="icon-link" target="_blank" href="https://github.com/luigicapogrosso" class="external-link" disabled>
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+                <div class="columns is-centered">
+                    <div class="column is-8">
+                        <div class="content">
+                            <p>
+                                This website is licensed under a <a rel="license" target="_blank"
+                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+                                Commons Attribution-ShareAlike 4.0 International License</a>.
+                            </p>
+                            <p>
+                                The source code is based on <a target="_blank" href="https://github.com/nerfies/nerfies.github.io">Nerfies</a>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+</html>
