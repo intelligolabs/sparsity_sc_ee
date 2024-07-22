@@ -24,7 +24,7 @@ Luigi Capogrosso<sup>1</sup>, Enrico Fraccaroli<sup>1,2</sup>, Giulio Petrozziel
 
 <sup>2</sup> *Department of Computer Science, The University of North Carolina at Chapel Hill, USA*
 
-<sup>3</sup> *3 Department of Computer Science, University of Verona, Italy*
+<sup>3</sup> *Department of Computer Science, University of Verona, Italy*
 
 ## Citation ##
 If you use [**Sparsity SC&EE**](https://arxiv.org/abs/2407.11763), please, cite the following paper:
