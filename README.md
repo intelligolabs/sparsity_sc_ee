@@ -17,6 +17,9 @@ Official implementation of the paper [Enhancing Split Computing and Early Exit A
 To run Sparsity SC&EE, use the file `main.py`.
 In particular, the `launch.sh` file contains two launch script examples that you can use to modify the default configuration.
 
+## Credits ##
+We would like to thank Sourya Dey for the repository [predefinedsparse-nnets](https://github.com/souryadey/predefinedsparse-nnets).
+
 ## Authors ##
 Luigi Capogrosso<sup>1</sup>, Enrico Fraccaroli<sup>1,2</sup>, Giulio Petrozziello<sup>3</sup>, Francesco Setti<sup>1</sup>, Samarjit Chakraborty<sup>2</sup>, Franco Fummi<sup>1</sup>, Marco Cristani<sup>1</sup>
 
