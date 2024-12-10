@@ -32,12 +32,11 @@ Luigi Capogrosso<sup>1</sup>, Enrico Fraccaroli<sup>1,2</sup>, Giulio Petrozziel
 ## Citation ##
 If you use [**Sparsity SC&EE**](https://ieeexplore.ieee.org/abstract/document/10673767), please, cite the following paper:
 ```
-@inproceedings{capogrosso2024enhancing,
-  title={Enhancing Split Computing and Early Exit Applications through Predefined Sparsity},
-  author={Capogrosso, Luigi and Fraccaroli, Enrico and Petrozziello, Giulio and Setti, Francesco and Chakraborty, Samarjit and Fummi, Franco and Cristani, Marco},
-  booktitle={2024 Forum on Specification \& Design Languages (FDL)},
-  pages={1--8},
-  year={2024},
-  organization={IEEE}
+@InProceedings{capogrosso2024enhancing,
+  author    = {Capogrosso, Luigi and Fraccaroli, Enrico and Petrozziello, Giulio and Setti, Francesco and Chakraborty, Samarjit and Fummi, Franco and Cristani, Marco},
+  booktitle = {Forum on Specification \& Design Languages (FDL)},
+  title     = {{Enhancing Split Computing and Early Exit Applications through Predefined Sparsity}},
+  year      = {2024},
+  doi       = {10.1109/fdl63219.2024.10673767},
 }
 ```
